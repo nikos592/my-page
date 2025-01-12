@@ -24,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 250px 0 250px;
     background-color: #ECECEC;
 }
 
@@ -46,13 +46,23 @@ body {
     cursor: pointer;
 }
 
+.theme-toggle {
+    border-radius: 50px; /* делаем кнопку круглой */
+    padding: 10px 20px; /* добавляем отступы внутри кнопки */
+    font-size: 16px; /* размер шрифта */
+    cursor: pointer; /* изменяем курсор при наведении */
+}
+
 /* Основной контент */
 .content {
     background-color: #ECECEC;
     padding: 20px;
 }
 
-/* Блок hero */
+.content-sections {
+    padding: 10px 250px 0 250px;
+}
+/* Блок hero */ 
 .hero {
     display: flex;
     justify-content: space-between; /* Разделяет элементы поровну */
@@ -90,6 +100,12 @@ body {
     margin-bottom: 30px; /* Отступ снизу для создания пространства */
 }
 
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 36px !important;
+}
+
 /* Центрирование изображения внутри контейнера */
 .hero-scene-wrapper {
     display: flex;
@@ -104,10 +120,13 @@ body {
 
 /* Секция навыков */
 .skills {
-    background-color: #f9f9f9; /* Светлый фон для контраста */
     padding: 40px 0; /* Внутренние отступы сверху и снизу */
 }
 
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+}
 /* Внутренний контейнер секции навыков */
 .skills__inner {
     display: grid;
@@ -128,6 +147,19 @@ body {
 .skills-body {
     line-height: 1.6; /* Удобная высота строки */
 }
+
+.skill-card {
+    padding: 20px 30px 20px 50px;
+    font-size: 20px;
+}
+
+
+.skills-list-item {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15px;
+}
+
 
 /* Адаптация для мобильных устройств */
 @media (max-width: 900px) {
@@ -165,7 +197,6 @@ body {
     }
 }
 
-/* Кнопка */
 .button {
     display: inline-block;
     padding: 12px 24px;
