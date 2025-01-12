@@ -1,28 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilia Nikulin. Frontend developer</title>
+    <meta name="description" content="Илья Никулин — фронтенд-разработчик. Портфолио проектов и навыки.">
+    <title>Илья Никулин. Фронтенд-разработчик</title>
     <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
     <header class="main-header">
         <div class="header-container">
-            <a class="header-logo" href="#" aria-label="Home-page" title="To home page">
+            <a class="header-logo" href="#" aria-label="Главная страница" title="На главную страницу">
                 <img class="logo_svg" src="/src/assets/images/logo.svg" width="64" height="64" alt="Логотип">
             </a>
-            <nav class="header-nav">
+            <nav role="navigation" class="header-nav">
                 <ul class="site-navigation">
-                    <li class="site-navigation-item">Обо мне</li>
-                    <li class="site-navigation-item">Навыки</li>
-                    <li class="site-navigation-item">Портфолио</li>
-                    <li class="site-navigation-item">Опыт работы</li>
-                    <li class="site-navigation-item">Контакты</li>
+                    <li class="site-navigation-item"><a href="#about">Обо мне</a></li>
+                    <li class="site-navigation-item"><a href="#skills">Навыки</a></li>
+                    <li class="site-navigation-item"><a href="#portfolio">Портфолио</a></li>
+                    <li class="site-navigation-item"><a href="#experience">Опыт работы</a></li>
+                    <li class="site-navigation-item"><a href="#contact">Контакты</a></li>
                 </ul>
             </nav>
             <button id="theme-toggle" class="theme-toggle">Светлая тема</button>
         </div>
     </header>
+    <main class="content">
+        <div class="content-sections">
+            <div class="hero section" id="about">
+                <div class="hero-body">
+                    <div class="hero-body-text">
+                        <p>Привет! Меня зовут Илья Никулин. Мои проекты — ваши триумфы.</p>
+                        <a href="#contact" class="button">Связаться со мной</a>
+                    </div>
+                </div>
+                <div class="hero-scene-wrapper">
+                    <img class="comp_png" src="/src/assets/images/comp.png" width="500" height="500" alt="Компьютер">
+                </div>
+            </div>
+            <section class="skills section" id="skills">
+                <div class="skills__inner grid grid--2 container">
+                    <div class="skills-collumn">
+                        <h2 class="skills-title">Hard skills</h2>
+                        <div class="skills-body"></div>
+                    </div>
+                    <div class="skills-collumn">
+                        <h2 class="skills-title">Soft skills</h2>
+                        <div class="skills-body"></div> 
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
