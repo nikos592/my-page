@@ -10,7 +10,7 @@ body {
     font-family: 'Rubik', Arial, sans-serif;
     margin: 0;
     padding: 0;
-
+    background-color: #ECECEC;
 }
 
 /* Стили для заголовка страницы */
@@ -26,7 +26,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 250px 0 250px;
-    background-color: #ECECEC;
+    
 }
 
 /* Навигация сайта */
@@ -237,11 +237,37 @@ h3 {
     font-size: 18px;
 }
 
+.footer-container {
+    margin: 0;
+    padding: 0;
 
+}
 
+.footer-inner {
+    display: flex;
+    gap: 100px;
+    margin:auto 260px;
+    box-shadow:inset 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
 
+.footer-title {
+    margin: auto; 
+    padding: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 43px;
+    font-size: 36px; 
+}
 
-
+.footer-description {
+    margin: auto; 
+    padding-left: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 43px;
+    font-size: 18px; 
+}
 
 
 
